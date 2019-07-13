@@ -1,0 +1,20 @@
+.header{
+    box-shadow: 0 .2rem 1rem rgba(0,0,0,.15)!important;
+    background: #fff;
+    ul {
+        .navbar-brand{
+            margin-right: 7rem;
+        }
+        form{
+            input{
+                width: 411px;
+              
+            }
+            .input-group-prepend{
+                .btn{
+                    border: 1px solid #ced4da!important;
+                }
+            }
+        }
+    }
+}
