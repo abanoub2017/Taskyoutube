@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { PostsService } from '../../serves/posts.service';
 @Component({
   selector: 'app-fixed-header',
   templateUrl: './fixed-header.component.html',
@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FixedHeaderComponent implements OnInit {
 
-  constructor() { }
+  search = '';
+test: any;
+  constructor( protected postsService: PostsService) {
+    
+  }
+
+  onSearch(){
+    this.postsService.postsService(this.search).subscribe( x => {
+      this.test = x['kind']; 
+     });
+  }
+
+
 
   ngOnInit() {
   }

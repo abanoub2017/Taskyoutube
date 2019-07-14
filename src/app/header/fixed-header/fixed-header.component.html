@@ -21,10 +21,13 @@
                   type="text"
                   class="form-control"
                   id="inlineFormInputGroup"
-                  placeholder="Username"
+                  placeholder="search"
+                  [(ngModel)]="search"
+                  name="search"
+              
                 />
                 <div class="input-group-prepend">
-                  <button type="submit" class="btn bg-light ">
+                  <button type="submit" class="btn bg-light " (click)="onSearch()">
                       Search
                   </button>
                 </div>

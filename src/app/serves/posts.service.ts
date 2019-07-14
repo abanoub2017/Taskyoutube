@@ -9,8 +9,8 @@ export class PostsService {
   constructor(
     protected httpClient: HttpClient,
   ) { }
-
-  get postsService(): Observable<[]> {
-    return  this.httpClient.get<[]>('');
+   postsService(search): Observable<[]> {
+    // return  this.httpClient.get<[]>('https://www.googleapis.com/youtube/v3/search?part=' + search);
+    return  this.httpClient.get<[]>(`https://www.googleapis.com/youtube/v3/search?part=${search}&key=AIzaSyDlPjL8ZMc4334KHwAznQfztE9_SH3Ckw4`);
     }
 }
