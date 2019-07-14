@@ -8,14 +8,17 @@ import { PostsService } from '../../serves/posts.service';
 export class FixedHeaderComponent implements OnInit {
 
   search = '';
-test: any;
+  test: any;
   constructor( protected postsService: PostsService) {
     
   }
 
   onSearch(){
     this.postsService.postsService(this.search).subscribe( x => {
-      this.test = x['kind']; 
+      console.log(
+        this.test = x['items'] 
+      );
+      
      });
   }
 
