@@ -1,6 +1,13 @@
 .sec-header{
     padding-top: 5rem!important;
     color: #3c3c3c;
+   input:focus, textarea:focus, select:focus{
+          outline: none !important;
+    outline-color: transparent !important;
+    border-color: #d2cfcf;
+    box-shadow: 0 0 0 0;
+
+    }
     .navbar-brand{
         .mobile{
             display: none;

@@ -10,7 +10,8 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 export class FixedHeaderComponent implements OnInit {
 
   search = '';
-  items: any;
+  items: any
+  all = [];
   result=[];
   faSearch = faSearch;
   loading = false;
@@ -23,6 +24,7 @@ export class FixedHeaderComponent implements OnInit {
     this.postsService.postsService(this.search).subscribe( x => {
       this.loading = true;
       console.log(
+        this.all= x,
         this.items = x['items'],
         this.result = x['pageInfo']
       );

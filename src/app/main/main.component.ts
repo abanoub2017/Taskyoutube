@@ -11,6 +11,7 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 export class MainComponent implements OnInit {
   @Input() search  ;
   @Input() items: any ;
+  @Input() all: any;
   faSpinner = faSpinner;
 
   @Input() loading: boolean;

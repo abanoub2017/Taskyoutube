@@ -1,7 +1,17 @@
 .header{
     box-shadow: 0 .2rem 1rem rgba(0,0,0,.15)!important;
     background: #fff;
+    input:focus, textarea:focus, select:focus{
+          outline: none !important;
+    outline-color: transparent !important;
+    border-color: #d2cfcf;
+    box-shadow: 0 0 0 0;
+
+    }
     ul {
+        fa-icon{
+                color: #bfbebe;
+        }
         .navbar-brand{
             margin-right: 7rem;
             .big{
@@ -14,7 +24,7 @@
         form{
             input{
                 width: 411px;
-              
+
             }
             .input-group-prepend{
                 .btn{
@@ -25,13 +35,53 @@
     }
 }
 
+@media (max-width:1024px){
+    .header{
+        ul {
+            .navbar-brand{
+               margin: 0;
+
+            }
+        
+        }
+    } 
+}
+
+@media (max-width:767px) {
+    .header{
+        ul{
+
+           form{
+            input{
+                width: 277px ;
+              
+            }
+        }
+        }
+    }
+}
+@media (max-width: 520px){
+     .header{
+        ul{
+
+           form{
+            input{
+                width: 209px ;
+              
+            }
+        }
+        }
+    }
+}
+
+
 @media (max-width: 440px) {
     .header{
         box-shadow: 0 .2rem 1rem rgba(0,0,0,.15)!important;
         background-color: #f00; 
         ul {
             .logo{
-width: 25%;
+                width: 25%;
                 .navbar-brand{
                    margin: 0;
                    .big{
@@ -64,15 +114,3 @@ width: 25%;
         }
     }
 } 
-
-@media (max-width:1024px){
-    .header{
-        ul {
-            .navbar-brand{
-               margin: 0;
-
-            }
-        
-        }
-    } 
-}

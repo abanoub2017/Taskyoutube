@@ -2,40 +2,42 @@
 <div class="main">
     <!-- Loading icon -->
     <div class="loading" *ngIf="loading">
+        <div class="loading-body">
             <fa-icon [icon]="faSpinner"></fa-icon>
-            <p>
+            <p class="m-0 pl-2">
                 Loading
             </p>
+        </div>
     </div>
     <!-- Start Container -->
     <div class="container">
         <!-- Start list Items -->
         <ul class="list-unstyled item-post pt-2">
             <li *ngFor="let item of items" class="mb-2">
-                <a href="https://www.youtube.com/watch?v={{item.id.videoId}}" >
+                <a href="https://www.youtube.com/watch?v={{item.id.videoId}}">
                     <div class=" d-flex justify-content-start">
                         <!-- Left Data Side -->
                         <div class="left-data mr-2">
-                            
-                            <img src={{item.snippet.thumbnails.medium.url}}  height="150">
+
+                            <img src={{item.snippet.thumbnails.medium.url}} height="150">
                         </div>
                         <!-- Left Data Side -->
                         <div class="right-data">
-                        <div class="main-title">
+                            <div class="main-title">
                                 <h4 class="m-0">
-                                        {{item.snippet.title}}
-                                    </h4>
-                                    <span class="metadata ">
-                                        {{item.snippet.channelTitle  }}  
-                                        <span class="ml-2">{{item.snippet.publishedAt | date:'mediumDate' }}</span>
-                                    </span>
-                        </div>
-                             <div class="description mt-2 mobile">
-                                    <p>
-                                            {{item.snippet.description}}
-                                        </p>
-         
-                             </div>
+                                    {{item.snippet.title}}
+                                </h4>
+                                <span class="metadata ">
+                                    {{item.snippet.channelTitle  }}
+                                    <span class="ml-2">{{item.snippet.publishedAt | date:'mediumDate' }}</span>
+                                </span>
+                            </div>
+                            <div class="description mt-2 mobile">
+                                <p>
+                                    {{item.snippet.description}}
+                                </p>
+
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -44,5 +46,3 @@
 
     </div>
 </div>
-
-

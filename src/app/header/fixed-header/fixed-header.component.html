@@ -3,12 +3,12 @@
   <!-- Container -->
   <div class="container">
     <ul class="nav justify-content-center">
-        <div class="logo">
-            <a class="navbar-brand" href="#">
-                <img class="big" src="assets/logo.png" alt="logo" width="155" height="65">
-                <img class="small" src="assets/logoMini.png" alt="logo" width="155" height="65">
-            </a>
-        </div>
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <img class="big" src="assets/logo.png" alt="logo" width="155" height="65">
+          <img class="small" src="assets/logoMini.png" alt="logo" width="155" height="65">
+        </a>
+      </div>
       <!-- Start Textbox Search -->
       <div class="mt-auto mb-auto enter-data">
         <form>
@@ -16,18 +16,11 @@
             <div class="col-auto">
               <label class="sr-only" for="inlineFormInputGroup">Search</label>
               <div class="input-group ">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inlineFormInputGroup"
-                  placeholder="search"
-                  [(ngModel)]="search"
-                  name="search"
-              
-                />
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="search"
+                  [(ngModel)]="search" name="search" />
                 <div class="input-group-prepend">
                   <button type="submit" class="btn bg-light " (click)="onSearch()">
-                      <fa-icon [icon]="faSearch"></fa-icon>
+                    <fa-icon [icon]="faSearch"></fa-icon>
                   </button>
                 </div>
               </div>
