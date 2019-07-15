@@ -23,14 +23,13 @@ export class FixedHeaderComponent implements OnInit {
   onSearch(){
     this.postsService.postsService(this.search).subscribe( x => {
       this.loading = true;
-      console.log(
-        this.all= x,
-        this.items = x['items'],
-        this.result = x['pageInfo']
-      );
+      this.all= x,
+      this.items = x['items'],
+      this.result = x['pageInfo']
+ 
       
      }, (e)=>{}, ()=>{
-       console.log('completed');
+       
        
        setTimeout(()=>{
 
