@@ -1,23 +1,49 @@
 <!-- Start Sec -->
-<div class="sec-header">
+<div class="sec-header " *ngIf="result.length !== 0 ">
   <div class="container">
-      <ul class="nav justify-content-around">
+      <ul class="filter-input nav justify-content-around p-3">
           <div>
               <div class="navbar-brand">
-                  <p>About 12,2525,2525 filtered Result</p>
+                  <p class="desktop m-0">About {{result.totalResults}} results</p>
+
+                  <div class="mobile">
+                    <div class=" d-flex justify-content-start">
+                       <select  class="form-control d-inline mr-2">
+                           <option selected>All </option>
+                           <option>...</option>
+                         </select>
+                         <select class="form-control d-inline">
+                             <option selected>All time</option>
+                             <option>...</option>
+                           </select>
+                    </div>
+
+                  </div>
               </div>
           </div>
         <!-- Start Textbox Search -->
         <div class="mt-auto mb-auto">
           <form>
             <div class="form-row align-items-center">
-                <li class="nav-item">
-                    <div ngbDropdown class="d-inline-block ">
-                      <a class="  nav-link btn" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</a>
+
+             <div class="nav-item mobile">
+               
+                <!-- <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select> -->
+
+             </div>
+
+                <li class="nav-item desktop">
+                    <div ngbDropdown class=" ">
+                      <a class="  nav-link btn" id="dropdownBasic1" ngbDropdownToggle>
+                        FILTER
+                        <fa-icon [icon]="faFilter"></fa-icon>
+                      </a>
                       <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                        <button ngbDropdownItem>Action - 1</button>
-                        <button ngbDropdownItem>Another Action</button>
-                        <button ngbDropdownItem>Something else is here</button>
+                        <button ngbDropdownItem>All</button>
+                        <button ngbDropdownItem>Any time</button>
                       </div>
                     </div>
                   </li>

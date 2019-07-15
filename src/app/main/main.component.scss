@@ -1,0 +1,127 @@
+.main{
+    font-family: Roboto, Arial, sans-serif;
+
+    .item-post{
+        margin: 0 187px;
+        border-top: 1px solid #eee;
+        li{
+            a{
+                text-decoration: none;
+                color: #000;
+                .left-data{
+                }
+                .right-data{
+
+                    .main-title{
+    
+                        h4{
+                            color: #3c3c3c;
+                            line-height: 24px;
+                            font-family: Roboto, Arial, sans-serif;
+                            font-size: 19px;
+                        }
+                        .metadata{
+                            font-size: 13px;
+                            color: #979797!important;
+                            font-weight: 500;
+                            span{
+                                
+                            }
+                        }
+                    }
+                    .description{
+                        font-size: 13px;
+                        color: #979797!important;
+                        font-weight: 500;
+                        p{
+        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.loading {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.972);
+    position: absolute;
+    top: 0;
+    left: 0;
+    fa-icon{
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+        
+    }
+    p{    }
+    
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media (max-width: 440px) {
+    .main{
+        .item-post{
+            margin: 0;
+            li{
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    .left-data{
+                        img{
+                            height: 100px;
+                            width: 144px;
+                        }
+                    }
+                    .right-data{
+    
+                        .main-title{
+        
+                            h4{
+                                color: #3c3c3c;
+                                line-height: 15px;
+                                font-family: Roboto, Arial, sans-serif;
+                                font-size: 13px;
+                                width: 154px;
+    overflow-wrap: break-word;
+                            }
+                            .metadata{
+                                font-size: 10px;
+                                color: #979797!important;
+                                font-weight: 500;
+                                span{
+                                    
+                                }
+                            }
+                        }
+                        .description{
+                            font-size: 13px;
+                            color: #979797!important;
+                            font-weight: 500;
+                            p{
+            
+                            }
+                        }
+                    }
+                }
+            }
+         
+        }
+        .mobile{
+       display: none;
+        }
+    }
+} 

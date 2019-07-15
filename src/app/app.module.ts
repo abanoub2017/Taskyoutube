@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { FixedHeaderComponent } from './header/fixed-header/fixed-header.component';
 import { SearchHeaderComponent } from './header/search-header/search-header.component';
 import { MainComponent } from './main/main.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MainComponent } from './main/main.component';
   BrowserModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

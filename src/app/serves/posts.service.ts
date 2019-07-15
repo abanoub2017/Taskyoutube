@@ -12,6 +12,7 @@ export class PostsService {
   ) { }
    postsService(search): Observable<[]> {
     
-    return  this.httpClient.get<[]>(`https://www.googleapis.com/youtube/v3/search?part=snippet&${search}&type=video&key=AIzaSyBR3UE6tw8MZuYBVORHtV9ODGUIrJ_XYOo`);
+    return  this.httpClient.get<[]>(`
+    https://www.googleapis.com/youtube/v3/search?part=snippet&q=${search}&type=video&key=AIzaSyDlPjL8ZMc4334KHwAznQfztE9_SH3Ckw4&maxResults=20`);
     }
 }

@@ -1,3 +1,39 @@
 .sec-header{
     padding-top: 5rem!important;
+    color: #3c3c3c;
+    .navbar-brand{
+        .mobile{
+            display: none;
+        }
+   }
+   .nav-link.btn:after{
+    display: none;
+  }   
 }
+
+
+
+@media (max-width: 440px) {
+    .sec-header{
+        padding-top: 5rem!important;
+        color: #3c3c3c;
+        .filter-input{
+        padding: 0 !important;
+        select{
+            width: 122px;
+        }
+        }
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: block !important;
+        }
+        .navbar-brand{
+        .nav-link.btn:after{
+        display: none;
+          }   
+    
+      }
+    }
+} 

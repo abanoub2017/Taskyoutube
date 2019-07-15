@@ -1,4 +1,6 @@
-<!-- Header Fixed and Filter -->
+<!-- Fixed Header Compnent search -->
 <app-fixed-header #header></app-fixed-header> 
-<app-search-header></app-search-header>
-<app-main [search]="header.search" [test]="header.test"></app-main>
+<!-- Sec Header Component have Filter -->
+<app-search-header [result]="header.result"></app-search-header>
+<!-- Main content -->
+<app-main [search]="header.search" [items]="header.items" [loading]="header.loading"></app-main>

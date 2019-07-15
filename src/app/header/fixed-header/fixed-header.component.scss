@@ -4,6 +4,12 @@
     ul {
         .navbar-brand{
             margin-right: 7rem;
+            .big{
+                display: block;
+            }
+            .small{
+                display: none;
+            }
         }
         form{
             input{
@@ -17,4 +23,56 @@
             }
         }
     }
+}
+
+@media (max-width: 440px) {
+    .header{
+        box-shadow: 0 .2rem 1rem rgba(0,0,0,.15)!important;
+        background-color: #f00; 
+        ul {
+            .logo{
+width: 25%;
+                .navbar-brand{
+                   margin: 0;
+                   .big{
+                       display: none;
+                   }
+                   .small{
+                       display: block;
+                       height: 50px;
+                       width: 66px;
+                   }
+                }
+            }
+            .enter-data{
+                width: 75%;
+                form{
+                    input{
+                        width: 68%;
+                        border-radius: inherit;
+                    }
+                    .input-group-prepend{
+                        
+                        .btn{
+                            background: #f00 !important;
+                            border: none !important;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@media (max-width:1024px){
+    .header{
+        ul {
+            .navbar-brand{
+               margin: 0;
+
+            }
+        
+        }
+    } 
 }
